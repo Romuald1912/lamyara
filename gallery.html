@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie | Lam Yara — Roi du Bazin N°1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://images.pexels.com/photos/6565759/pexels-photo-6565759.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Bazin Prestige" class="logo">
+                <span class="brand-name">BAZIN PRESTIGE</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Galerie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-cta">Nous Contacter</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1 class="page-title fade-in">Notre Galerie</h1>
+            <p class="page-subtitle fade-in-delay">Découvrez nos collections exclusives</p>
+        </div>
+    </section>
+
+    <section class="gallery-filters py-4">
+        <div class="container">
+            <div class="text-center">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="royal">Royal</button>
+                <button class="filter-btn" data-filter="moderne">Moderne</button>
+                <button class="filter-btn" data-filter="prestige">Prestige</button>
+                <button class="filter-btn" data-filter="tradition">Tradition</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-grid py-5">
+        <div class="container">
+            <div class="row g-4" id="galleryContainer">
+                <div class="col-md-6 col-lg-4 gallery-item reveal" data-category="royal">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bazin Royal">
+                        <div class="gallery-overlay">
+                            <h4>Bazin Royal Bleu</h4>
+                            <p>Collection Royale</p>
+                            <button class="btn-zoom" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item reveal" data-category="moderne">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/6311636/pexels-photo-6311636.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bazin Moderne">
+                        <div class="gallery-overlay">
+                            <h4>Bazin Moderne Rose</h4>
+                            <p>Collection Moderne</p>
+                            <button class="btn-zoom" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/6311636/pexels-photo-6311636.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item reveal" data-category="prestige">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/6311398/pexels-photo-6311398.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bazin Prestige">
+                        <div class="gallery-overlay">
+                            <h4>Bazin Prestige Or</h4>
+                            <p>Collection Prestige</p>
+                            <button class="btn-zoom" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/6311398/pexels-photo-6311398.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item reveal" data-category="tradition">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/6311640/pexels-photo-6311640.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bazin Tradition">
+                        <div class="gallery-overlay">
+                            <h4>Bazin Traditionnel</h4>
+                            <p>Collection Tradition</p>
+                            <button class="btn-zoom" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/6311640/pexels-photo-6311640.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item reveal" data-category="royal">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/6044266/pexels-photo-6044266.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bazin Royal">
+                        <div class="gallery-overlay">
+                            <h4>Bazin Royal Turquoise</h4>
+                            <p>Collection Royale</p>
+                            <button class="btn-zoom" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/6044266/pexels-photo-6044266.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item reveal" data-category="moderne">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/7679456/pexels-photo-7679456.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bazin Moderne">
+                        <div class="gallery-overlay">
+                            <h4>Bazin Moderne Blanc</h4>
+                            <p>Collection Moderne</p>
+                            <button class="btn-zoom" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/7679456/pexels-photo-7679456.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item reveal" data-category="prestige">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/6567359/pexels-photo-6567359.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bazin Prestige">
+                        <div class="gallery-overlay">
+                            <h4>Bazin Prestige Vert</h4>
+                            <p>Collection Prestige</p>
+                            <button class="btn-zoom" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/6567359/pexels-photo-6567359.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item reveal" data-category="tradition">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/5709661/pexels-photo-5709661.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bazin Tradition">
+                        <div class="gallery-overlay">
+                            <h4>Bazin Traditionnel Noir</h4>
+                            <p>Collection Tradition</p>
+                            <button class="btn-zoom" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/5709661/pexels-photo-5709661.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item reveal" data-category="royal">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/4620866/pexels-photo-4620866.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bazin Royal">
+                        <div class="gallery-overlay">
+                            <h4>Bazin Royal Bordeaux</h4>
+                            <p>Collection Royale</p>
+                            <button class="btn-zoom" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/4620866/pexels-photo-4620866.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item reveal" data-category="prestige">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/5624985/pexels-photo-5624985.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bazin Prestige">
+                        <div class="gallery-overlay">
+                            <h4>Bazin Prestige Violet</h4>
+                            <p>Collection Prestige</p>
+                            <button class="btn-zoom" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/5624985/pexels-photo-5624985.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item reveal" data-category="moderne">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/6565739/pexels-photo-6565739.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bazin Moderne">
+                        <div class="gallery-overlay">
+                            <h4>Bazin Moderne Corail</h4>
+                            <p>Collection Moderne</p>
+                            <button class="btn-zoom" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/6565739/pexels-photo-6565739.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 gallery-item reveal" data-category="tradition">
+                    <div class="gallery-card">
+                        <img src="https://images.pexels.com/photos/6311391/pexels-photo-6311391.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bazin Tradition">
+                        <div class="gallery-overlay">
+                            <h4>Bazin Traditionnel Marron</h4>
+                            <p>Collection Tradition</p>
+                            <button class="btn-zoom" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="https://images.pexels.com/photos/6311391/pexels-photo-6311391.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="imageModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" alt="Bazin" class="img-fluid" id="modalImage">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-logo mb-3">
+                        <img src="Images/lamyaralogo.jpeg" class="img-fluid rounded-circle" width="100" height="100vh">
+                        <span>Lam Yara — Roi du Bazin N°1</span>
+                    </div>
+                    <p class="footer-text">Tissus d'exception pour occassions prestigieuses</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Horaires d'ouverture</h5>
+                    <ul class="footer-list">
+                        <li><i class="far fa-clock"></i> Lundi - Vendredi: 9h00 - 19h00</li>
+                        <li><i class="far fa-clock"></i> Samedi: 10h00 - 18h00</li>
+                        <li><i class="far fa-clock"></i> Dimanche: 12h00 - 17h00</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-title">Contactez-nous</h5>
+                    <ul class="footer-list">
+                        <li><i class="fas fa-phone"></i> +225 07 88 88 88 06</li>
+                        <li><i class="fas fa-phone"></i> +225 05 06 09 09 09</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Treichville Avenue 11 Rue 15, Abidjan</li>
+                    </ul>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="text-center">
+                <p class="footer-copyright">&copy; 2024 Bazin Prestige. Tous droits réservés.</p>
+                <p class="footer-copyright text-center">Site propulsé par Go Studio.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--JavaScript-->
+    <script src="main.js"></script>
+</body>
+</html>
