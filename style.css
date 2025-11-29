@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --primary-color: #8B6F47;
-    --secondary-color: #C19A6B;
+    --primary-color: #f2f62b;
+    --secondary-color: #5b37ed;
     --accent-color: #D4AF37;
     --dark-color: #2C2416;
     --light-color: #F5F5DC;
@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-cta {
     background: var(--primary-color);
-    color: var(--white);
+    color: var(--secondary-color);
     padding: 10px 28px;
     border-radius: 50px;
     font-weight: 600;
@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-cta:hover {
-    background: transparent;
+    background: var(--white);
     color: var(--primary-color);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(139, 111, 71, 0.3);
@@ -470,7 +470,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('https://images.pexels.com/photos/6567359/pexels-photo-6567359.jpeg?auto=compress&cs=tinysrgb&w=1920');
+    background-image: url('Images/07.webp');
     background-size: cover;
     background-position: center;
     margin-top: 80px;
